@@ -72,8 +72,3 @@ departureAirport:DTW
 arrivalAirport:SEA
 :cq_csrf_token:undefined
 
-I'm Ross Smith.  I'm a full-stack web developer.  I have experience with gathering requirements, defining project scope, and data architecture."
-
-I want to help organizations define their software needs and recruit developers to fulfill them.  I'm focused on voting rights, fighting voter suppression, educating citizens, and mobilizing citizens to efficiently build relationships with their representatives.
-
-I'm refining the scope and requirements of an outbound calling and distributed phone tree application.  5calls.org is very close to what I want, but it's lacking a level of infrastructure to involve more causes.  Will post design notes for feedback and criticism on another platform soon; ask me about it and I'll loop you in.
