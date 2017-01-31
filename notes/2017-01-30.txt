@@ -1,0 +1,79 @@
+2017-01-30
+
+++++++++++ FLIGHT SCRAPER JS TOOLS AND REFERENCES ++++++++++
+ - pjscrape !!! Not using this one; too simple, not allowing POSTs
+   https://github.com/nrabinowitz/pjscrape
+   http://nrabinowitz.github.io/pjscrape/
+
+ - scraperjs <---- This is our scraper right here
+   https://github.com/ruipgil/scraperjs
+   
+ - x-ray !!! an alternate, looks to be simpler and GET-oriented
+   https://github.com/lapwinglabs/x-ray
+   
+ - request
+   https://github.com/request/request   http://stackoverflow.com/questions/28308131/how-do-you-properly-promisify-request
+   
+ - tough-cookie
+   https://www.npmjs.com/package/tough-cookie
+
+ - lodash
+   https://lodash.com/docs/4.17.4
+   
+ - command-line-args
+   https://www.npmjs.com/package/command-line-args
+   
+ - bluebird
+   http://bluebirdjs.com/docs/getting-started.html
+   http://ricostacruz.com/cheatsheets/bluebird.html
+	
+ - debug
+   https://blog.risingstack.com/node-js-logging-tutorial/
+   
+ - dateformat
+   https://www.npmjs.com/package/dateformat
+
+ - airport codes
+   http://www.airportcodes.org/
+
+========== ENVIRONMENT SETUP COMMANDS ==========
+brew update
+brew install phantomjs
+npm update
+npm install scraperjs
+npm install lodash
+npm install command-line-args
+npm install dateformat
+
+========== AIRPORT MODULE API ==========
+ - scrapeFlights(fromCodesArray, toCodesArray, flightDate);
+ - watchFlights(flightArray);
+ - unwatchFlights(flightArray);
+
+========== AIRPORT SCRAPER PARAMETERS ==========
+
+DELTA
+
+-- HTTP REQUEST
+POST http://www.delta.com/flightinfo/viewFlightStatus.action
+
+-- REQUEST HEADERS
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language:en-US,en;q=0.8
+Cache-Control:no-cache
+Content-Type:application/x-www-form-urlencoded
+
+-- FORM DATA
+requestingSite:polaris_athens
+searchOptionValue:CITYPAIR
+flightDate:2017-01-30
+flightNumber:
+departureAirport:DTW
+arrivalAirport:SEA
+:cq_csrf_token:undefined
+
+I'm Ross Smith.  I'm a full-stack web developer.  I have experience with gathering requirements, defining project scope, and data architecture."
+
+I want to help organizations define their software needs and recruit developers to fulfill them.  I'm focused on voting rights, fighting voter suppression, educating citizens, and mobilizing citizens to efficiently build relationships with their representatives.
+
+I'm refining the scope and requirements of an outbound calling and distributed phone tree application.  5calls.org is very close to what I want, but it's lacking a level of infrastructure to involve more causes.  Will post design notes for feedback and criticism on another platform soon; ask me about it and I'll loop you in.
