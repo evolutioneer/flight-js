@@ -25,6 +25,18 @@ The example command run in test.sh is:
 
 `DEBUG=flight-js* node flight-js.js -f DTW -t SEA -c delta -d 2017-01-31`
 
+Right now it yields JSON objects that look like this:
+`{
+  "fNum":" Delta 0039 ",
+  "dPort":"DTW",
+  "dDate":" 8:25AM 30 Jan 2017",
+  "aPort":"SEA",
+  "aDate":" 10:39AM 30 Jan 2017",
+  "craft":" Boeing 737-900ER ",
+  "tripTime":"5:14 ",
+  "status":" Past Schedule "
+}`
+
 ## What Next
 
 This probably looks like a dumpster fire to a proper node developer.
